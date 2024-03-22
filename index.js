@@ -13,6 +13,17 @@ if (!fs.existsSync(filesDirectory)) {
     fs.mkdirSync(filesDirectory);
 }
 
+app.get("/",(req,res)=>{
+    
+    res.send(`
+    <h3>To create File</h1>
+    https://nodejs-filesystem-jdpe.onrender.com/createFile
+    <h3>To Retrieve Files</h1>
+    https://nodejs-filesystem-jdpe.onrender.com/retrieveFiles
+
+    ` )
+})
+
 app.get('/createFile', (req, res) => {
     const currentDate = new Date();
     const fileName = `${currentDate.toISOString()}.txt`;
