@@ -14,13 +14,12 @@ if (!fs.existsSync(filesDirectory)) {
 }
 
 app.get("/",(req,res)=>{
-    
     res.send(`
     <h3>To create File</h1>
+    <a target="_blank" href="https://nodejs-filesystem-jdpe.onrender.com/createFile">https://nodejs-filesystem-jdpe.onrender.com/createFile</a>
     https://nodejs-filesystem-jdpe.onrender.com/createFile
     <h3>To Retrieve Files</h1>
-    https://nodejs-filesystem-jdpe.onrender.com/retrieveFiles
-
+    <a target="_blank" href="https://nodejs-filesystem-jdpe.onrender.com/retrieveFiles">https://nodejs-filesystem-jdpe.onrender.com/retrieveFiles</a>
     ` )
 })
 
